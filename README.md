@@ -1,1 +1,2 @@
-# 已搬迁到了：[https://codeberg.org/getcap](https://codeberg.org/getcap)
+# 已搬迁到了：
+[https://getcap.deno.dev](https://getcap.deno.dev)
