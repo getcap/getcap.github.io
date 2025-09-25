@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google" content="notranslate">
+  <title>正版启动-出租</title>
+  <link href="https://unpkg.com/beercss@3.6.13/dist/cdn/beer.min.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/beercss@3.6.13/dist/cdn/beer.min.js"></script>
+  <script type="module"
+    src="https://unpkg.com/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+  <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+  <script src="
+    https://unpkg.com/js-md5@0.8.3/src/md5.js
+    "></script>
+
+
+</head>
+
+<body>
+  <main class="responsive">
+    <article class="white-text left-shadow">
+      <h5>正版启动-出租</h5>
+      <p>
+        ⚠️提示：用户试用一天，只能开通试用 “本体+2DLC” ，不能开通试用  “本体+345DLC”。<br>
+        ⚠️提示：其他情况，请转账后，再使用本页面。<br>
+        ⚠️提示：当前给代理商特惠，5DLC租1天的价格是1.5元。<br>        
+        ⚠️提示：当前给代理商特惠，5DLC租10天的价格是5元。<br>
+        ⚠️提示：租其他时间,租其他DLC，请协商。               
+      </p>
+
+      <div class="field label invalid border">
+        <input type="text" id="input1" class="active">
+        <label class="active">管理员密码</label>    
+      </div>
+
+      <div class="field label border">
+        <input type="text" id="input3" class="active">
+        <label class="active">用户序列号</label>
+      </div>
+
+      <div class="field label border">
+        <input type="text" id="input2" class="active">
+        <label class="active">用户码</label>
+      </div>
+
+      <div class="field label border">
+        <select id="select1">
+          <option value="5">5DLC</option>
+          <option value="4">4DLC</option>
+          <option value="3">3DLC</option>
+          <option value="2">2DLC</option>
+          <option value="1">1DLC</option>
+          <option value="0">0DLC</option>
+        </select>
+        <label>用户类型</label>
+      </div>
+
+      <div class="field label border">
+        <input type="text" id="input4" class="active" value="20250101">
+        <label class="active">开始日期</label>
+        <span class="helper">⚠️提示：日期请使用YYYYMMDD格式，比如20250101</span>
+      </div>
+
+      <div class="field label border">
+        <input type="text" id="input5" class="active">
+        <label class="active">结束日期</label>
+        <span class="helper">⚠️提示：日期请使用YYYYMMDD格式，比如20250101。<br>⚠️结束日期的当天，用户还可以使用。<br>⚠️如果是永久用户可以输入99991231</span>
+      </div>
+
+      <nav class="right-align">
+        <button class="small-round" hx-on:click="calc(event)">
+          <i>calculate</i>
+          <span>计算</span>
+        </button>
+
+        <dialog class="top" id="dialog">
+          <h5>提示</h5>
+          <div>
+            空白不能计算，请输入种子
+          </div>
+          <nav class="right-align">
+            <button hx-on:click="document.querySelector('#dialog').close()">Confirm</button>
+          </nav>
+        </dialog>
+
+        <div class="snackbar" id="snackbar1">
+          <i>warning</i>
+          <span id="snackbarContent1">提示</span>
+        </div>
+
+        <script>
+(function(_0x420118,_0xa27426){const _0x18f0a5=_0x2bc5,_0x18040a=_0x420118();while(!![]){try{const _0x151873=parseInt(_0x18f0a5(0x168))/0x1+-parseInt(_0x18f0a5(0x145))/0x2*(parseInt(_0x18f0a5(0x138))/0x3)+-parseInt(_0x18f0a5(0x16e))/0x4+parseInt(_0x18f0a5(0x13f))/0x5*(parseInt(_0x18f0a5(0x16b))/0x6)+-parseInt(_0x18f0a5(0x12f))/0x7+parseInt(_0x18f0a5(0x134))/0x8*(-parseInt(_0x18f0a5(0x133))/0x9)+parseInt(_0x18f0a5(0x139))/0xa*(parseInt(_0x18f0a5(0x143))/0xb);if(_0x151873===_0xa27426)break;else _0x18040a['push'](_0x18040a['shift']());}catch(_0xdcba81){_0x18040a['push'](_0x18040a['shift']());}}}(_0x1194,0x8a710));const _0x4e9d67=(function(){let _0x3290eb=!![];return function(_0x405a35,_0x29bf7d){const _0xdae90f=_0x3290eb?function(){const _0x2d9f1d=_0x2bc5;if(_0x29bf7d){const _0x2c626e=_0x29bf7d[_0x2d9f1d(0x155)](_0x405a35,arguments);return _0x29bf7d=null,_0x2c626e;}}:function(){};return _0x3290eb=![],_0xdae90f;};}()),_0x6f2bc3=_0x4e9d67(this,function(){const _0x2522d3=_0x2bc5;return _0x6f2bc3[_0x2522d3(0x14c)]()[_0x2522d3(0x173)](_0x2522d3(0x147)+'+$')[_0x2522d3(0x14c)]()[_0x2522d3(0x14e)+'r'](_0x6f2bc3)['search'](_0x2522d3(0x147)+'+$');});_0x6f2bc3();const _0x2218ac=(function(){let _0x346836=!![];return function(_0x16cadd,_0x1e2ac5){const _0xe94d28=_0x346836?function(){const _0x447c2a=_0x2bc5;if(_0x1e2ac5){const _0x24f4a9=_0x1e2ac5[_0x447c2a(0x155)](_0x16cadd,arguments);return _0x1e2ac5=null,_0x24f4a9;}}:function(){};return _0x346836=![],_0xe94d28;};}());function _0x2bc5(_0xd1e36d,_0xdd6b2c){const _0xdd812b=_0x1194();return _0x2bc5=function(_0x455599,_0xb2133b){_0x455599=_0x455599-0x12c;let _0x5092c9=_0xdd812b[_0x455599];if(_0x2bc5['xIrqmH']===undefined){var _0x28f6e0=function(_0x6f2bc3){const _0x4e9d67='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x119491='',_0x2bc568='',_0x40973a=_0x119491+_0x28f6e0;for(let _0x3e5494=0x0,_0x2fa255,_0x50f173,_0x23b38a=0x0;_0x50f173=_0x6f2bc3['charAt'](_0x23b38a++);~_0x50f173&&(_0x2fa255=_0x3e5494%0x4?_0x2fa255*0x40+_0x50f173:_0x50f173,_0x3e5494++%0x4)?_0x119491+=_0x40973a['charCodeAt'](_0x23b38a+0xa)-0xa!==0x0?String['fromCharCode'](0xff&_0x2fa255>>(-0x2*_0x3e5494&0x6)):_0x3e5494:0x0){_0x50f173=_0x4e9d67['indexOf'](_0x50f173);}for(let _0xb5191e=0x0,_0x3290eb=_0x119491['length'];_0xb5191e<_0x3290eb;_0xb5191e++){_0x2bc568+='%'+('00'+_0x119491['charCodeAt'](_0xb5191e)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2bc568);};_0x2bc5['iGlFfV']=_0x28f6e0,_0xd1e36d=arguments,_0x2bc5['xIrqmH']=!![];}const _0x34427b=_0xdd812b[0x0],_0x2218ac=_0x455599+_0x34427b,_0x5d4f84=_0xd1e36d[_0x2218ac];if(!_0x5d4f84){const _0x405a35=function(_0x29bf7d){this['ERplMi']=_0x29bf7d,this['CVpyAY']=[0x1,0x0,0x0],this['KceIDH']=function(){return'newState';},this['CteWmq']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['SnVyBh']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x405a35['prototype']['zSdQGD']=function(){const _0xdae90f=new RegExp(this['CteWmq']+this['SnVyBh']),_0x2c626e=_0xdae90f['test'](this['KceIDH']['toString']())?--this['CVpyAY'][0x1]:--this['CVpyAY'][0x0];return this['UZUZfd'](_0x2c626e);},_0x405a35['prototype']['UZUZfd']=function(_0x346836){if(!Boolean(~_0x346836))return _0x346836;return this['FsxgjH'](this['ERplMi']);},_0x405a35['prototype']['FsxgjH']=function(_0x16cadd){for(let _0x1e2ac5=0x0,_0xe94d28=this['CVpyAY']['length'];_0x1e2ac5<_0xe94d28;_0x1e2ac5++){this['CVpyAY']['push'](Math['round'](Math['random']())),_0xe94d28=this['CVpyAY']['length'];}return _0x16cadd(this['CVpyAY'][0x0]);},new _0x405a35(_0x2bc5)['zSdQGD'](),_0x5092c9=_0x2bc5['iGlFfV'](_0x5092c9),_0xd1e36d[_0x2218ac]=_0x5092c9;}else _0x5092c9=_0x5d4f84;return _0x5092c9;},_0x2bc5(_0xd1e36d,_0xdd6b2c);}(function(){_0x2218ac(this,function(){const _0x1ceaee=_0x2bc5,_0x5aec85=new RegExp(_0x1ceaee(0x15c)+_0x1ceaee(0x13a)),_0xacca2b=new RegExp(_0x1ceaee(0x130)+_0x1ceaee(0x166)+'0-9a-zA-Z_'+'$]*)','i'),_0x51f03d=_0x34427b(_0x1ceaee(0x146));!_0x5aec85[_0x1ceaee(0x131)](_0x51f03d+_0x1ceaee(0x162))||!_0xacca2b[_0x1ceaee(0x131)](_0x51f03d+_0x1ceaee(0x13d))?_0x51f03d('0'):_0x34427b();})();}());function _0x1194(){const _0x41d572=['Aw5WDxq','Aw5WDxqX','nJq1otvJDLLJu3m','D2fYBG','Aw5MBW','i2rPywXVzW','mtqXmZeZmZDhqNzmuuS','z2v0rwXLBwvUDa','mta2nMXbDuPizW','Aw5PDa','kcGOlISPkYKRkq','Bg9N','CxvLCNLtzwXLyW','DMfSDwu','Aw5WDxqXDMfSDq','Dg9tDhjPBMC','y291BNrLCG','y29UC3rYDwn0BW','Dgv4Da','zsKGE30','y29UC29Szq','C3bVBNnLihDHCW','ysbWCM9IBgvTia','Aw5WDxqY','yxbWBhK','DhjHy2u','Aw5WDxq1','BMn0Aw9UkcKG','C2HVD01VzgfS','Aw5Uzxjive1m','vgv4DdO','zNvUy3rPB24GkG','tMv0D29YAYbYzq','DgLVBJO','y3rVCIGICMv0Dq','E30Uy29UC3rYDq','Dc16Aw13ChrHBq','y2HHAw4','zgvIDq','BgvUz3rO','EMHVDs5My2fWCa','ys16qs1AxYrDwW','ywn0Aw9U','otG1otm0yMTitLrg','CMv0DxjUicHMDq','vgHLCMuGD2fZia','mte0D3fSuvr4','x19WCM90B19F','D2HPBguGkhrYDq','mtC1otK3nKTTuwrxDq','DgfIBgu','Dg9Y','Ahr0Chm6lY9Jyq','zxjYB3i','C2vHCMnO','C3rHDgvpyMPLyW','qNLjza','zs5Szw5NDgG6','y2fSBa','mZuXnJiXmKvzyLb3zG','xcTCkYaQkd86wW','DgvZDa','ig5VDcbVAW','ndu4ndy2m0P4Bfj4AW','ohHuALDZvW','CNiUy24TAgfUzW','yMLUza','z2DLCG','mJC5ovnIsfrQtq','mtbvr1f4Cum','xcGGkLWP','ChjVDg90ExbL','zxrJAcbVCgvYyq'];_0x1194=function(){return _0x41d572;};return _0x1194();}const _0xb2133b=(function(){let _0x5f4819=!![];return function(_0x22b203,_0x27d1d5){const _0x5d7393=_0x5f4819?function(){if(_0x27d1d5){const _0x13066a=_0x27d1d5['apply'](_0x22b203,arguments);return _0x27d1d5=null,_0x13066a;}}:function(){};return _0x5f4819=![],_0x5d7393;};}()),_0x455599=_0xb2133b(this,function(){const _0x5d0ac7=_0x2bc5,_0x2caaf1=function(){const _0x1acce3=_0x2bc5;let _0x3d6aab;try{_0x3d6aab=Function(_0x1acce3(0x169)+_0x1acce3(0x158)+(_0x1acce3(0x160)+_0x1acce3(0x15f)+'rn\x20this\x22)('+'\x20)')+');')();}catch(_0x37ec97){_0x3d6aab=window;}return _0x3d6aab;},_0x5acb06=_0x2caaf1(),_0xf32c3f=_0x5acb06[_0x5d0ac7(0x151)]=_0x5acb06[_0x5d0ac7(0x151)]||{},_0xf74836=['log',_0x5d0ac7(0x140),_0x5d0ac7(0x141),'error','exception',_0x5d0ac7(0x16f),_0x5d0ac7(0x156)];for(let _0x2441ae=0x0;_0x2441ae<_0xf74836[_0x5d0ac7(0x164)];_0x2441ae++){const _0x25f836=_0xb2133b[_0x5d0ac7(0x14e)+'r'][_0x5d0ac7(0x13b)]['bind'](_0xb2133b),_0x20ca42=_0xf74836[_0x2441ae],_0x4e4859=_0xf32c3f[_0x20ca42]||_0x25f836;_0x25f836[_0x5d0ac7(0x16c)]=_0xb2133b[_0x5d0ac7(0x136)](_0xb2133b),_0x25f836[_0x5d0ac7(0x14c)]=_0x4e4859[_0x5d0ac7(0x14c)]['bind'](_0x4e4859),_0xf32c3f[_0x20ca42]=_0x25f836;}});_0x455599();async function calc(_0x32d356){const _0x29c18e=_0x2bc5;let _0x3798c5=document[_0x29c18e(0x144)+_0x29c18e(0x12c)](_0x29c18e(0x13e))[_0x29c18e(0x14a)],_0x51493e=document['getElement'+_0x29c18e(0x12c)](_0x29c18e(0x154))[_0x29c18e(0x14a)],_0x1f1747=document['getElement'+'ById']('input3')[_0x29c18e(0x14a)],_0x70f903=document[_0x29c18e(0x144)+_0x29c18e(0x12c)]('input4')[_0x29c18e(0x14a)],_0x2ca36d=document['getElement'+_0x29c18e(0x12c)](_0x29c18e(0x157))[_0x29c18e(0x14a)],_0xf429=document[_0x29c18e(0x144)+_0x29c18e(0x12c)]('select1')['value'];console[_0x29c18e(0x148)](_0xf429),console[_0x29c18e(0x148)](_0x29c18e(0x14b)+_0x29c18e(0x12d)+_0x3798c5[_0x29c18e(0x164)]);if(_0x3798c5&&_0x51493e&&_0x1f1747&&_0x70f903&&_0x2ca36d&&_0xf429)try{const _0x461ed0=await fetch(_0x29c18e(0x171)+'p-user-ren'+_0x29c18e(0x161)+_0x29c18e(0x135)+_0x29c18e(0x165)+'.run/set/'+_0x3798c5+'/'+_0x51493e+'/'+_0x1f1747+'/'+_0xf429+'/'+_0x70f903+'/'+_0x2ca36d);if(!_0x461ed0['ok'])throw new Error(_0x29c18e(0x15d)+_0x29c18e(0x152)+_0x29c18e(0x132));const _0x27de99=await _0x461ed0[_0x29c18e(0x14f)]();console[_0x29c18e(0x148)](_0x29c18e(0x15b),_0x27de99),document[_0x29c18e(0x144)+_0x29c18e(0x12c)]('snackbarCo'+'ntent1')[_0x29c18e(0x15a)]=_0x27de99,ui('#snackbar1');}catch(_0x324a2b){console[_0x29c18e(0x172)](_0x29c18e(0x16a)+_0x29c18e(0x153)+'with\x20the\x20f'+_0x29c18e(0x13c)+_0x29c18e(0x15e),_0x324a2b);}else document[_0x29c18e(0x149)+_0x29c18e(0x170)](_0x29c18e(0x142))[_0x29c18e(0x159)]();}function _0x34427b(_0x54c1de){function _0xe6bf42(_0x5f222c){const _0x3db613=_0x2bc5;if(typeof _0x5f222c==='string')return function(_0x24c156){}[_0x3db613(0x14e)+'r'](_0x3db613(0x16d)+_0x3db613(0x150))[_0x3db613(0x155)](_0x3db613(0x14d));else(''+_0x5f222c/_0x5f222c)[_0x3db613(0x164)]!==0x1||_0x5f222c%0x14===0x0?function(){return!![];}[_0x3db613(0x14e)+'r'](_0x3db613(0x163)+_0x3db613(0x137))[_0x3db613(0x12e)](_0x3db613(0x167)):function(){return![];}[_0x3db613(0x14e)+'r'](_0x3db613(0x163)+_0x3db613(0x137))[_0x3db613(0x155)](_0x3db613(0x174)+'t');_0xe6bf42(++_0x5f222c);}try{if(_0x54c1de)return _0xe6bf42;else _0xe6bf42(0x0);}catch(_0x3a8eb3){}}
+        </script>
+      </nav>
+
+    </article>
+
+    <article class="white-text left-shadow">
+      <p>游戏下载网址</p>
+      <a href="https://getcap.github.io/download.html" class="underline">https://getcap.github.io/download.html</a>
+    </article>
+  </main>
+</body>
+
+</html>
